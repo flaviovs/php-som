@@ -40,7 +40,7 @@ function print_color_options()
 
 <?php else: ?>
 <p>Something is missing. Please read <a href="README.txt">the documentation for this example</a>.</p>
-<p>Refresh this page whe ready.</p>
+<p>Refresh this page when ready.</p>
 <?php endif ?>
 </body>
 </html>
