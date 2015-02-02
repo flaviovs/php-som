@@ -40,20 +40,21 @@ In a nutshell, the basic workflow is:
     require_once('som.php');
     require_once('trainer.php');
 
-    // Create a SOM with a 20x20 surface for feature vector that hold 5
+    // Create a SOM with a 20x20 surface for feature vectors that hold 5
     // elements
     $som = new SOM(20, 20, 5);
     $trainer = new SOMTrainer($som);
-    // Let our features vectors elements be numbers between 0 and 1
-    // (inclusive). We can also use a feature vector-sized array to
-    // set the minimum or maximum value for each element of input vectors
+    // Let our feature vectors elements be numbers between 0 and 1
+    // (inclusive). We can also use an array the size of our feature to
+    // set the minimum or maximum value for each element of input
+    // vectors individually.
     $trainer->setLimits(0, 1);
 
     // Let's train our network
     foreach ($mydata_vectors as $vector)
 		// NB: $vector is a 5-elements feature vector array that holds
 		// the data we want to classify
-		$trainer->train(array($vector);
+		$trainer->train($vector);
 
 	// Now save the SOM
 	file_put_contents('som.dat', serialize($som));
