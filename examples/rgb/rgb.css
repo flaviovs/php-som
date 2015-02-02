@@ -1,0 +1,38 @@
+@import url("jquery-minicolors/jquery.minicolors.css");
+
+#left {
+	width: 10%;
+	min-width: 175px;
+	margin-right: 1em;
+}
+
+#right {
+	width: 80%;
+}
+
+#left, #right, .minicolors, #demo {
+	float: left;
+}
+
+#demo {
+	text-align: center;
+	padding: 1em 2em;
+	margin: 2em 0 0 1em;
+}
+
+#result {
+	clear: both;
+}
+
+#result ul {
+	margin: 0;
+	padding: 0;
+}
+
+#result ul li {
+	display: inline-block;
+	width: 25%;
+	margin: 0;
+}
+
+
