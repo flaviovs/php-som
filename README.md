@@ -29,11 +29,11 @@ that you need to care about:
   self-organizing maps. This is the only file you need to include in
   your application to actually *use* a SOM.
 
-* `SOMTrainer` (`trainer.php`) - This class is used to create trainer*
-  *objects. Trainer objects are used to train a SOM so that it can do
-  *classification later.
+* `SOMTrainer` (`trainer.php`) - This class is used to create *trainer
+  objects*. Trainer objects are used to train a SOM so that it can do
+  *classification* later.
 
-In a nutshell, the basic workflow is:
+The basic workflow is:
 
 ### Training ###
 
