@@ -61,9 +61,11 @@ The basic workflow is:
 
 ### Using the network ###
 
-    require_once('som.php');
+	require_once('som.php');
 
 	$data = file_get_contents('som.dat');
+
+	$som = unserialize($data);
 
 	// Get best matching unit (BMU) -- the vector that best match the
 	// input vector, that's it
